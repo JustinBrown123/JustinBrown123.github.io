@@ -87,8 +87,7 @@ section ul{
     text-align: center;   
 }
 
-#projects {
-    
+#projects {   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:auto;
@@ -103,7 +102,6 @@ section ul{
     background: #ccc;
     padding: 1em;
     border: 1px solid #333;
-
 }
 
 #projects article img{
