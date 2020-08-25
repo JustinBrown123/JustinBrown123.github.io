@@ -6,11 +6,11 @@ body{
 }
 @font-face{
     font-family: 'Lora';
-    src: url("/Images/Lora/static/Lora-Regular.ttf") format('truetype');
+    src: url("/images/Lora/static/Lora-Regular.ttf") format('truetype');
  
 }
 .secondary-background-image{
-    background-image: url(./Images/Background/wood_pattern.png);
+    background-image: url("./images/Background/wood_pattern.png");
     box-shadow: 0 0 12px 12px rgba(4, 2, 0, .5) inset;
 }
 
@@ -89,7 +89,7 @@ header{
 }
 #header-image{
     margin-left: 30vw;
-    background-image: url(./Images/JustinGrey.jpg);
+    background-image: url("./images/JustinGrey.jpg");
     width: 250px;
     min-width: 120px;
     background-position: center; 
