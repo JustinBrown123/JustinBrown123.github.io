@@ -1,5 +1,5 @@
 body{
-    background-image: url(/Images/Background/whitey.png);
+    background-image: url(./Images/Background/whitey.png);
     margin: 0;
     font-family: 'Lora', 'Times New Roman', Times, serif;
       
@@ -10,7 +10,7 @@ body{
  
 }
 .secondary-background-image{
-    background-image: url(/Images/Background/wood_pattern.png);
+    background-image: url(./Images/Background/wood_pattern.png);
     box-shadow: 0 0 12px 12px rgba(4, 2, 0, .5) inset;
 }
 
@@ -93,12 +93,12 @@ header{
 }
 #header-image{
     margin-left: 30vw;
-    background-image: url(/Images/JustinGrey.jpg);
+    background-image: url(./Images/JustinGrey.jpg);
     width: 250px;
     min-width: 120px;
     background-position: center; 
     background-repeat: no-repeat; 
-    background-size: cover;    
+    background-size: cover;
     z-index: 1;
     box-shadow: 0 0 8px 8px rgba(4, 2, 0, .9) inset;
 }
