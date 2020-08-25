@@ -37,6 +37,10 @@ img{
     
 }
 
+
+
+/* -----------------------------icon------------------- */
+
 .icon-link{
     display: inline-block;
     font-size: calc(5px + .5vh);
@@ -46,6 +50,68 @@ img{
     
     margin: auto;
 }
+.icon-image{
+    margin: auto;
+}
+
+.navbar-icon{
+    height:10vh;    
+}
+.icon-list{
+    width: 140px;
+    margin-left:auto;
+    margin-right: auto;
+    columns: 3;
+    min-height: 40px;
+
+}
+/* //////////////////////////////////////Header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+header{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.9);
+    
+    display: flex;  
+    margin: 0;
+
+}
+#header-text-content{ 
+    margin: 3vh 4vw;
+    font-size: calc(2vh + 3vw);
+    max-width: 70%;
+}
+
+.gradient-text {
+    background-color: #ffffff;
+    background-image: linear-gradient(45deg, rgb(172, 172, 172, .8), rgba(185, 97, 9, .3),rgb(172, 172, 172, .8),rgba(185, 97, 9, .3), rgb(172, 172, 172, .8),rgba(185, 97, 9, .3));
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+#header-image{
+    margin-left: 30vw;
+    background-image: url(/Images/JustinGrey.jpg);
+    width: 250px;
+    min-width: 120px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;    
+    z-index: 1;
+    box-shadow: 0 0 8px 8px rgba(4, 2, 0, .9) inset;
+}
+footer{
+    
+    width: 100%;
+    font-size: calc(8px + .25vw);
+    margin-top: 3vw;
+    font-size: calc(5px + .5vh);
+    text-align: center;
+   
+}
+
 
 /* ///////////////////////////NavBar Navbar\\\\\\\\\\\\\\\\\\\\ */
 .nav-link{
@@ -71,19 +137,6 @@ img{
     grid-template-columns: repeat(auto-fit, minmax(32px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(25px, 1fr));
     font-size:calc(5px + .5vw + 1vh); 
-}
-.navbar-icon{
-    height:10vh;
-
-    
-}
-.icon-list{
-    width: 140px;
-    margin-left:auto;
-    margin-right: auto;
-    columns: 3;
-    min-height: 40px;
-
 }
 #navbar{  
     position: fixed;
@@ -157,59 +210,28 @@ img{
 }
 
 
-/* //////////////////////////////////////Header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-header{
-    width: 100%;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.9);
-    
-    display: flex;  
-    margin: 0;
-
-}
-#header-text-content{ 
-    margin: 3vh 4vw;
-    font-size: calc(2vh + 3vw);
-    max-width: 70%;
-}
-
-.gradient-text {
-    background-color: #ffffff;
-    background-image: linear-gradient(45deg, rgb(172, 172, 172, .8), rgba(185, 97, 9, .3),rgb(172, 172, 172, .8),rgba(185, 97, 9, .3), rgb(172, 172, 172, .8),rgba(185, 97, 9, .3));
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-}
-#header-image{
-    margin-left: 30vw;
-    background-image: url(/Images/JustinGrey.jpg);
-    width: 250px;
-    min-width: 120px;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;    
-    z-index: 1;
-    box-shadow: 0 0 8px 8px rgba(4, 2, 0, .9) inset;
-}
-footer{
-    
-    width: 100%;
-    font-size: calc(8px + .25vw);
-    margin-top: 3vw;
-    font-size: calc(5px + .5vh);
-    text-align: center;
-   
-}
-
-.icon-image{
-    margin: auto;
-}
-
 
 /* /////////////////////////////////////////////////////////Main Content\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
+
+.main-content-margin{
+    margin: 5vh auto;
+}
+
+.slide {
+    display: none;
+    position: relative;
+}
+.main-content-size{
+    height: 28vw;
+    width: 80vw;
+    min-width: 270px;
+    border-radius: 10px;
+
+}
+#main-content{
+    background-color: rgba(0, 0, 0, .9);
+}
 /* Next & previous buttons */
 .prev, .next {
     display: flex;
@@ -239,30 +261,7 @@ footer{
 .prev:hover, .next:hover{
     color: purple;
     background: rgba(0, 0, 0, .5);
-
     transform: scale(1.2);
-}
-.main-content-margin{
-    margin: 5vh auto;
-}
-
-.slide {
-    display: none;
-    position: relative;
-}
-.main-content-size{
-    height: 28vw;
-    width: 80vw;
-    min-width: 270px;
-    border-radius: 10px;
-
-}
-#main-content{
-    
-
-    background-color: rgba(0, 0, 0, .9);
-    
-    
 }
 
 /* --------Slide Setup---------------------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -276,7 +275,6 @@ footer{
 }
 
 .inner-slide-pair, .inner-slide-image{
-
     background: linear-gradient(180deg,rgba(185, 97, 9, .1),rgba(255, 255, 255, 0.7)15%,rgba(255, 255, 255, 0.7)85%,rgba(185, 97, 9, .1));
     text-align: center;
     align-self: center;
@@ -286,7 +284,6 @@ footer{
     min-height: 40%;
     margin: 1vw; 
     border-radius:11px;
-  
     overflow: hidden;
     font-size: calc(8px + .5vw);
 }
@@ -296,6 +293,11 @@ footer{
     border: black 1px solid;
 }
 
+
+
+
+/* 
+------------------------------article----------------- */
 article{
     border: solid black 2px;
     border-radius: 10px;
@@ -309,9 +311,7 @@ article{
     padding: 5px;
     display: grid;
     margin: 1vw;
-    background: linear-gradient(90deg,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.7)15%,rgba(255, 255, 255, 0.7)85%,rgba(255, 255, 255, 0.2) );
-    
-    
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.7)15%,rgba(255, 255, 255, 0.7)85%,rgba(255, 255, 255, 0.2) );   
 }
 
 /* ...................>>>>>>>>>>>>>>>>inside article---------------------------------- */
