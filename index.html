@@ -1,90 +1,203 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Justin Brown</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be18782db1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
 
-        <link rel="stylesheet" type="text/css" href="./style.css">
-    </head>
-        <body>
+    <div class="secondary-background-image">
+    <header id="main-header">
+        
+            <nav id="navbar">
             
-
-            <header>
-                <h1>Justin Brown</h1>
-                <span>Full Stack Developer</span>
-
-            </header>
-            <main>
-                <section id= "aboutme">
-                    <h2>About Me</h2>
-                    <p>
-                            In 2016 I moved to Cleveland ohio, along with moving to Cleveland was the desire to change my career path. While exploring new career paths, I
-                        took a promotion as Executive Chef, which was a great opportunity. I had the pleasure of leading a strong team for a couple years, but again felt it was time 
-                        to move on from the culinary industry. 
-                        
-                            I found myself wanting to get more involved into the tech industry. I felt it was an industry that I wanted to become part of, due to my belief 
-                        that it is the future and interesting. After talking to several friends who successfully got jobs out of a Coding Bootcamp.
-                        I decided to enroll in "We Code It" C# Bootcamp. I finished the program in mid December  2019. After completing the BootCamp I started to continue my education 
-                        by taking Udemy courses furthering my understanding.
-                           
-                            Outside of my career I'm involved in the cycling community and use to race cyclocross. Although these days I just enjoy trying to get "Rad" on my mountain bike.
-                        Exploring with my Wife and Dog is also something I enjoy doing when we have the time to do so together.
-
-                    </p>
-                </section>
-                <section id= "myProjects">
-                    <h2>Projects</h2>
-                    <p>
-                       Example projects that I have completed throughout the course of my time at We Can Code It Bootcamp
-                    </p>
-                    <div id = "projects">
-                        <article>
-                            <h3>Accelerate</h3>
-                            <a href="https://github.com/JustinBrown123/Accelerate"target="_blank"><img src = "./images/Accelerate.png"></a>
-                            <p>Technologies Used: JavaScript, HTML/CSS, API, SQL, .NET Core.</p>
-                            <p>A single page web app made for a parent trying to achieve milestones for their child</p>
-                        </article>
-                        <article>
-                            <h3>Coffee Review</h3>
-                            <a href="https://github.com/JustinBrown123/CoffeeReview"target="_blank"> <img src = "./images/CoffeeReview.png"></a>
-                            <p>Technologies Used: HTML/CSS, MVC, SQL, C#, TDD</p>
-                            <p>A web app designed to review various coffees and to add coffees a new user may come upon</p>
-
-                        </article>
-                        <article>
-                            <h3>Bike Shop</h3>
-                            <a href="https://github.com/JustinBrown123/apimasteryproject-bikes"target="_blank"><img src = "./images/BikeShop.png"></a>
-                            <p>Technologies Used: JavaScript, HTML/CSS, API, SQL, .NET Core</p>
-                            <p>A single page web app for a mock bike shop</p>
-                        </article>
-                        
+                <div id="navbar-text">
+                    <div class="navbar-icon navbar-list">
+                        <a href="https://www.linkedin.com/in/justnbrown" class="icon-link nav-link" target="_blank"><img class="icon-image" src="/Images/Icons/icons8-linkedin-48.png">Linked-In</a>
+                        <a href="https://github.com/JustinBrown123/" class="icon-link nav-link" target="_blank"><img class="icon-image" src="/Images/Icons/icons8-github-48 (1).png">Github</i></a>
+                        <a href="/Images/Justin Brown Resume.pdf" class="icon-link nav-link" target="_blank"><img class="icon-image" src="/Images/Icons/icons8-pdf-38 (1).png">Resume</a>
                     </div>
-                </section>
-                <section id="getInTouch">
-                    <h2>Get in Touch</h2>
-                    <ul>
-                        <li>Email: J-Brown123@live.com</li>
-                        <li>Phone: (330) 509-4362</li>
-                        <li></li>
-                    </ul>
-                </section>
+                    <hr>
+                    <div class="navbar-list">
+                        <a class="nav-link" onclick="navBarSlide(1)">Career</a>
+                        <a class="nav-link" onclick="navBarSlide(2)">Projects</a>
+                        <a class="nav-link" onclick="navBarSlide(3)">About Me</a>
+                        <a class="nav-link" onclick="navBarSlide(4)">Get In Touch</a>
+                    </div>
+                </div>
 
-            </main>
+                <div id="navbar-button" onclick="show_navbar()">
+                    
+                    <div id="navbar-button-arrow"><i class="fas fa-chevron-down"></i></div>
+                    <div id="expand-tip">Expand</div>
 
-
-            <nav>
-                <a href="#aboutme">About Me</a>
-                <a href="#myProjects">Projects</a>
-                <a href="#getInTouch">Get in Touch</a>
-                <a href="https://github.com/JustinBrown123"target="_blank">Github</a>
+                </div>
+                
+                <!-- //contain a github url and a linked in url fixed at top-->
             </nav>
-
-
-            <div id="image">
-                    <img src = "./images/PirateGizmo (2).jpg">
-            </div>       
-            <footer>                   
-                &copy; Bike &amp; Dog 2019
-            </footer>
-    </body>
+        
+            <div id="header-text-content"><!--Try No to use this so we can delete it -->
+                <div id="header-name" class="header-text"><span class="gradient-text">Justin Brown<br>
+            Full Stack Developer</span></div>
+            </div>
+            <div id="header-image">
+                
+            </div>
+    
+    </header>
+    </div>
+    <div class="main-content-margin secondary-background-image main-content-size">
+    <main id="main-content" class="main-content-size">
+        
+        <section id="welcome-section" class="slide">
+            <div class="inner-slide-wrapper">
+                <div class="inner-slide-pair">
+                    <h4>Career Prospects</h4>
+                    <p>Boss yuuzhan t88 whaladon vader poggle qui-gon. Lyn fey'lya panaka jax. Utapau tagge valorum sidious jamillia. Huk bibble pa'lowick hutt ben braxant solo hoth. Pau'an echani organa organa falleen jubnuk logray. Braxant tagge garm endocott muun bith gerb. Maul moff vratix raynar. Mara er'kit quarren halla padmé chagrian gora caedus hutt. Nikto thisspias kenobi gorog wicket maul. Zeltron mirialan sebulba pellaeon gorog. Bossk jodo lowbacca naboo aayla kyp juvex garm lorth. Joruus yuvernian zhell marek hoth watto yuzzem.   </p>
+                </div>
+                <div class="inner-slide-image">
+                    <img src="/Images/espressopicture.jpg">
+                </div>
+            </div>
+        </section>
+         
+        <section id="projects" class="slide">
+            <div class="inner-slide-wrapper">
+                <article>
+                    <div class="article-title">Accelerate</div>
+                    <a href="https://github.com/JustinBrown123/Accelerate"target="_blank" class="article-image"><img src = "/Images/Accelerate.png"></a>
+                    <div class="article-description">A single page web app to assist parents in understanding milestones and planning activities for their child</div>
+                    <div class="article-technologies">
+                    <strong>Technologies Used:</strong><br>
+                    Javascript, HTML, CSS, API, SQL, .NET Core.</div>
+                </article>
+                <article>
+                    <div class="article-title">Coffee Review</div>
+                    <a href="https://github.com/JustinBrown123/CoffeeReview" target="_blank" class="article-image"> <img src = "/Images/CoffeeReview.png"></a>                           
+                    <div class="article-description">A web app designed to review various coffees and for new users to add coffees</div>
+                    <div class="article-technologies">
+                    <strong>Technologies Used:</strong><br>
+                    HTML, CSS, MVC, SQL, C#, TDD</div>
+                </article>
+                <article>
+                    <div class="article-title">Bike Shop</div>
+                    <a href="https://github.com/JustinBrown123/apimasteryproject-bikes" target="_blank" class="article-image"><img src = "/Images/BikeShop.png"></a>
+                    <div class="article-description">A single page web app for a mock bike shop</div>
+                    <div class="article-technologies"><strong>Technologies Used:</strong><br>
+                        Javascript, HTML, CSS, API, SQL, .NET Core</div>
+                    
+                </article>
+            </div>
+        </section>
+        <section id="about-me" class="slide">
+            <div class="inner-slide-wrapper">
+                <div class="inner-slide-image">
+                    <img src="/Images/ireland coast (2).jpg">
+                </div>
+                <div class="inner-slide-pair">
+                    <h4>Personal Life</h4>
+                    <p>Ziro chewbacca argazdan bibble polis iktotchi gank qui-gon. Hapes moff pa'lowick allana dantooine ziro paaerduag. Cerean letaki raioballo rotta aka hssis jettster. Cabasshite tibor obi-wan olié. Ikrit jax isolder -lom altyr zabrak vilim arvel. Abrion antemeridian drall durron ka. Juvex kamino bardan clawdite teevan saurin gricho beru kwi. Neti piett braxant gwurran jan. Gorax sidious moddell shmi bel. Daala skakoan anx kashyyyk shado. Jade bothan kast biggs abyssin caedus melodie skywalker. Anakin secura vurk antilles anzati.</p>
+                </div>
+            </div>
+        </section>   
+        <section id="Contact-me" class="slide">
+            <div class="inner-slide-wrapper">
+                <div class="inner-slide-pair">
+                    <h1>Justin Brown</h1>
+                    <p>Software Developer<br>Columbus Ohio<br><a href="tel:(330)-509-4362">(330) 509-4362</a><br></p>
+                    <a href="https://www.linkedin.com/in/justnbrown" class="icon-link nav-link" target="_blank"><img class="icon-image" src="/Images/Icons/icons8-linkedin-48.png">Linked-In</a>
+                    <a href="https://github.com/JustinBrown123/" class="icon-link nav-link" target="_blank"><img class="icon-image" src="/Images/Icons/icons8-github-48 (1).png">Github</i></a>
+                    <a href="/Images/Justin Brown Resume.pdf" class="icon-link nav-link" target="_blank"><img class="icon-image" src="/Images/Icons/icons8-pdf-38 (1).png">Resume</a>
+                </div>
+                <div class="inner-slide-image">
+                    <img src="/Images/PeruMountain11 (2).jpg">
+                </div>
+            </div>
+        </section>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10096;</a>
+        <a class="next" onclick="plusSlides(1)">&#10097;</a>
+        
+    </main>
+    </div>
+ 
+    <footer><p>&copy; Bike &amp; Dog 2020</p>
+        <div class="icon-list">
+        <img src="/Images/Icons/icons8-html-5-38 (1).png" class="icon-image">
+        <img src="/Images/Icons/icons8-javascript-35.png"class="icon-image">
+        <img src="/Images/Icons/icons8-css3-38.png"class="icon-image">
+        </div>
+    </footer>
+</div>
+</body>
 </html>
+<script>
+function show_navbar(){
+    
+    document.getElementById("navbar-button").classList.toggle("open")
+    document.getElementById("navbar").classList.toggle("open");
+    document.getElementById("navbar-text").classList.toggle("open");
+    document.getElementById("navbar-button-arrow").classList.toggle("open");
 
+
+    var x = document.getElementById("expand-tip");
+    if (x.innerHTML === "Expand") {
+        x.innerHTML = "Hide";
+        x.style.width ="45px";
+    } else {
+        x.innerHTML = "Expand";
+        x.style.width ="60px";
+    }
+}
+
+
+
+var slideIndex = 1;
+
+var slides = document.getElementsByClassName("slide");
+
+showSlides(slideIndex);   
+
+function navBarSlide(n){
+    showSlides(slideIndex =n)
+}
+
+
+    // Next/previous controls
+function plusSlides(n) {
+    if(n == 1){
+        setTimeout(
+    function slideright(){
+    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.animation = "animateleft 0.5s";}, 200)
+    }
+    else if(n == -1){
+
+        setTimeout(
+        function slideleft(){
+    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.animation = "animateright 0.5s";}, 200)
+    } 
+    setTimeout(showSlides(slideIndex += n), 1000);   
+}
+    
+function showSlides(n) {
+   var i;
+    if (n > slides.length) {
+        slideIndex = 1
+        }
+    if (n < 1) 
+    {
+        slideIndex = slides.length
+        }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    setTimeout(function(){
+    slides[slideIndex-1].style.display = "block";}, 800)
+}
+</script>
