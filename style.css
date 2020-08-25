@@ -1,5 +1,5 @@
 body{
-    background-image: url(./Images/Background/whitey.png);
+    background-image: url("./images/Background/whitey.png");
     margin: 0;
     font-family: 'Lora', 'Times New Roman', Times, serif;
       
@@ -341,7 +341,7 @@ footer{
     bottom: 0;
     width: 100%;
     font-size: calc(8px + .25vw);
-
+    margin-top: 10vw;
 
     font-size: calc(5px + .5vh);
     text-align: center;
