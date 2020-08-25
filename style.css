@@ -37,8 +37,6 @@ img{
     
 }
 
-
-
 /* -----------------------------icon------------------- */
 
 .icon-link{
@@ -46,11 +44,7 @@ img{
     font-size: calc(5px + .5vh);
     text-align: center;
 }
-.icon-image{
-    
-    margin: auto;
-}
-.icon-image{
+.icon-image{  
     margin: auto;
 }
 
@@ -79,6 +73,8 @@ header{
     margin: 3vh 4vw;
     font-size: calc(2vh + 3vw);
     max-width: 70%;
+    font-weight: 700;
+    
 }
 
 .gradient-text {
@@ -101,15 +97,6 @@ header{
     background-size: cover;
     z-index: 1;
     box-shadow: 0 0 8px 8px rgba(4, 2, 0, .9) inset;
-}
-footer{
-    
-    width: 100%;
-    font-size: calc(8px + .25vw);
-    margin-top: 3vw;
-    font-size: calc(5px + .5vh);
-    text-align: center;
-   
 }
 
 
@@ -153,7 +140,7 @@ footer{
 #navbar.open{  
     background-color: rgba(255, 255, 255, .9);
     transition: .5s ease;
-    top:0vh; 
+    top:0px; 
 
 }
 #navbar-text{
@@ -165,24 +152,45 @@ footer{
 }
 #navbar-button{
     text-align: center;
-    font-size:calc(12px + 1vw); 
     position: fixed;
     border-radius: 0 0 10px 10px;
     color: gray; 
     border: grey solid;
     border-width: 0 1.5px 1.5px ;
     top: .25vh; 
-    left: 48%;
-    width: 4%;
-    height: calc(3px + 1vw);
+    left: 49vw;
+    margin-left: auto;
+    margin-right:auto;
+    width: 40px;
+    text-align:center;
+    height: 20px;
     cursor: pointer;
+}
+
+#navbar-button.open{
+    top: 20.5vh;
+    transition: 0.5s ease;
+    height: calc(8px + .75vw);
+    background-color: rgba(255, 255, 255, 0.8);   
+}
+
+#navbar-button-arrow{   
+    margin-top: -15px;
+    font-size: 30px; 
+     
+    
+}
+#navbar-button-arrow.open{
+    transform: rotate(-180deg);
+    color: black; 
+    margin-top: -3px;
 }
 #expand-tip{
     visibility: hidden;  
     position: absolute;
     text-transform: unset;
     top: 4px;
-    left: 25px;
+    left: 2vw;
     color: white;
     width: 60px;
     text-align:right;
@@ -190,23 +198,6 @@ footer{
 }
 #navbar-button:hover #expand-tip{
    visibility: visible;
-}
-
-
-#navbar-button.open{
-    top: 20.5vh;
-    transition: 0.5s ease;
-    text-transform: scaleY(-1);
-    height: calc(8px + .75vw);
-    background-color: rgba(255, 255, 255, 0.8);   
-}
-
-#navbar-button-arrow{
-    margin-top: -6px;
-}
-#navbar-button-arrow.open{
-    transform: scaleY(-1);
-    color: black; 
 }
 
 
@@ -227,6 +218,7 @@ footer{
     width: 80vw;
     min-width: 270px;
     border-radius: 10px;
+
 
 }
 #main-content{
@@ -341,6 +333,20 @@ article{
     height: 5vw;
 }
 
+/* -------------------footer */
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: calc(8px + .25vw);
+
+
+    font-size: calc(5px + .5vh);
+    text-align: center;
+   z-index: -5;
+}
 
 
 /* ,<<<<<<<<<<<<<<<<<<<<<<<Animation>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -364,7 +370,8 @@ article{
 
 @media (max-width: 1050px){
     #main-content{
-        height: auto;   
+        height: auto; 
+        margin-bottom: 20vh;  
     }
     
     .inner-slide-pair{
@@ -374,6 +381,7 @@ article{
         height: 200px;
         min-width: 180px;
     }
+
     #header-text-content{
         font-size: 30px;
         width: 80%;
@@ -382,6 +390,10 @@ article{
         margin: 2px 2px 2px 30vw;
         height: 196px;
         width: 300px;
+    }
+    #navbar-button-arrow.open{
+        margin-top:-8px;
+
     }
 
 }
@@ -422,6 +434,20 @@ article{
     #navbar-button{
         background-color: rgba(255, 255, 255, .9);
         width: 25px;
+        height: 11px;
+    }
+    #navbar-button-arrow{
+        font-size:20px;
+    
+        
+
+    }
+    #navbar-button-arrow.open{
+        margin-top:-5px;
+
+    }
+    footer{
+        margin-top:30vh;
     }
 
 
