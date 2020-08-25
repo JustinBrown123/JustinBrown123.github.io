@@ -324,6 +324,7 @@ article{
     font-size: calc(8px + .5vw);
     justify-self: center;
     width:90%;
+    min-height: 35px;
     height: 5vw;
     padding: 1vh 0 0 0 ;
 }
@@ -337,11 +338,11 @@ article{
 
 
 footer{
-    position: fixed;
+ 
     bottom: 0;
     width: 100%;
     font-size: calc(8px + .25vw);
-    margin-top: 10vw;
+    margin-top: 5vh;
 
     font-size: calc(5px + .5vh);
     text-align: center;
@@ -369,9 +370,9 @@ footer{
 }
 
 @media (max-width: 1050px){
-    #main-content{
+    .main-content-size{
         height: auto; 
-        margin-bottom: 20vh;  
+    
     }
     
     .inner-slide-pair{
@@ -398,8 +399,9 @@ footer{
 
 }
 @media (max-width: 600px){
-    #main-content{
+    .main-content-size{
         height: auto;   
+        margin-bottom: 0;
     }
     .inner-slide-pair{
         min-width: 250px;
@@ -446,9 +448,7 @@ footer{
         margin-top:-5px;
 
     }
-    footer{
-        margin-top:30vh;
-    }
+
 
 
 }
