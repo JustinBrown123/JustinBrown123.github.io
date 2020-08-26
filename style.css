@@ -296,7 +296,7 @@ article{
     align-self: center;
     justify-self: center;
     width: 22vw;
-    min-width: 250px;
+    min-width: 180px;
     height: 25vw;
     min-height: 250px;
     padding: 5px;
@@ -471,4 +471,37 @@ footer{
 
     
     }
+    .inner-slide-pair{
+        min-width: 150px;
+    }
+    .inner-slide-pair, .inner-slide-image{
+        height: auto;}
+
+
+    .main-content-size{
+        min-width: 200px; 
+    }
+    .inner-slide-wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(190px, 1fr));
+    }
+
+    /* ...................>>>>>>>>>>>>>>>>inside article---------------------------------- */
+    .article-title{
+        font-size: calc(20px + .5vw);
+        height: auto;      
+    }
+    .article-image{
+        align-self: center;  
+        justify-self: center;
+        width: 100%;
+    }
+    .article-description{
+        height: auto
+    }
+    .article-technologies{
+        height: auto;
+    }
+
+
 }
