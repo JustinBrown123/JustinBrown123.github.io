@@ -89,7 +89,7 @@ header{
 }
 #header-image{
     margin-left: 30vw;
-    background-image: url("./images/JustinGrey.jpg");
+    background-image: url("./images/GreyJustin2.jpg");
     width: 250px;
     min-width: 120px;
     background-position: center; 
@@ -276,7 +276,7 @@ header{
     margin: 1vw; 
     border-radius:11px;
     overflow: hidden;
-    font-size: calc(8px + .5vw);
+    font-size: calc(6px + .5vw);
 }
 
 .inner-slide-pair{
@@ -307,11 +307,11 @@ article{
 
 /* ...................>>>>>>>>>>>>>>>>inside article---------------------------------- */
 .article-title{
-    padding: 2px;
+    padding: 0px;
 
     font-size: calc(20px + .5vw);
     height: calc(20px + .5vw);
-    margin:0px;
+    margin:8px;
     
 }
 .article-image{
@@ -320,16 +320,16 @@ article{
     width: 100%;
 }
 .article-description{
-    font-size: calc(8px + .5vw);
+    font-size: calc(7px + .5vw);
     justify-self: center;
-    width:90%;
+    width:95%;
     min-height: 35px;
-    height: 5vw;
-    padding: 1vh 0 0 0 ;
+    height: 6vw;
+    padding: 1vh 0 1px 0 ;
 }
 .article-technologies{
     width: 100%;
-    font-size: calc(8px + .5vw);
+    font-size: calc(7px + .5vw);
     height: 5vw;
 }
 
@@ -376,6 +376,7 @@ footer{
     
     .inner-slide-pair{
         min-width: 250px;
+        font-size: calc(8px + .5vw);
     }
     header{
         height: 200px;
