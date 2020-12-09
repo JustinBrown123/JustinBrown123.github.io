@@ -20,11 +20,11 @@ body{
 }
 
 @keyframes animateleft{
-    from{left:-300px;opacity:0} to{left:0;opacity:1}
+    from{left:-200px;opacity:0} to{left:0;opacity:1}
 }
 
 @keyframes animateright{
-    from{right:-300px;opacity:0} to{right:0; opacity:1}
+    from{right:-200px;opacity:0} to{right:0; opacity:1}
 }
 .secondary-background-shade{
     background-color: rgba(0, 0, 0, .9);
@@ -46,11 +46,10 @@ img{
 }
 .icon-image{  
     margin: auto;
+    height:6vh;
 }
 
-.navbar-icon{
-    height:10vh;    
-}
+
 .icon-list{
     width: 140px;
     margin-left:auto;
@@ -104,17 +103,18 @@ header{
 /* ///////////////////////////NavBar Navbar\\\\\\\\\\\\\\\\\\\\ */
 .nav-link{
     justify-self: center;
-    cursor: pointer;
-    margin: 1vh;
+    cursor: pointer;  
     padding: 1vh;
     text-decoration: none;
     border-radius: 10px;
     
     
+    
 }
 .nav-link:hover{
-    background: rgba(255, 255, 255, .9);  
-    transform: scale(1.5);
+    background: rgba(255, 255, 255, .9); 
+     
+    transform: scale(1.1);
 }
 
 .navbar-list{
@@ -308,11 +308,9 @@ article{
 /* ...................>>>>>>>>>>>>>>>>inside article---------------------------------- */
 .article-title{
     padding: 0px;
-
     font-size: calc(20px + .5vw);
     height: calc(20px + .5vw);
-    margin:8px;
-    
+    margin:8px;   
 }
 .article-image{
     align-self: center;  
@@ -427,10 +425,8 @@ footer{
         left: 1vw;
     }
     #navbar{  
-       
         left: 5%;
         width: 90%;
-    
     }
     #navbar-button{
         background-color: rgba(255, 255, 255, .9);
@@ -440,9 +436,6 @@ footer{
     }
     #navbar-button-arrow{
         font-size:20px;
-    
-        
-
     }
     #navbar-button-arrow.open{
         margin-top:-5px;
@@ -458,26 +451,21 @@ footer{
         margin: 2px;
     }
     #navbar{  
-       
         left: 0;
         width: 100%;
-    
     }
     .navbar-list{
-
         font-size:12px; 
     }
     .icon-list{
         width: 80px;
-
-    
     }
     .inner-slide-pair{
         min-width: 150px;
     }
     .inner-slide-pair, .inner-slide-image{
-        height: auto;}
-
+        height: auto;
+    }
 
     .main-content-size{
         min-width: 200px; 
@@ -503,6 +491,4 @@ footer{
     .article-technologies{
         height: auto;
     }
-
-
 }

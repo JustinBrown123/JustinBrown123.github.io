@@ -15,9 +15,9 @@
             
                 <div id="navbar-text">
                     <div class="navbar-icon navbar-list">
-                        <a href="https://www.linkedin.com/in/justnbrown" class="icon-link nav-link" target="_blank"><img class="icon-image" src="./images/Icons/icons8-linkedin-48.png">Linked-In</a>
-                        <a href="https://github.com/JustinBrown123/" class="icon-link nav-link" target="_blank"><img class="icon-image" src="./images/Icons/icons8-github-48 (1).png">Github</a>
-                        <a href="./images/Justin Brown Resume.pdf" class="icon-link nav-link" target="_blank"><img class="icon-image" src="./images/Icons/icons8-pdf-38 (1).png">Resume</a>
+                        <span class="icon-hover"><a href="https://www.linkedin.com/in/justnbrown" class="icon-link nav-link" target="_blank"><img class="icon-image" src="./images/Icons/icons8-linkedin-48.png">Linked-In</a></span>
+                        <span class="icon-hover"><a href="https://github.com/JustinBrown123/" class="icon-link nav-link" target="_blank"><img class="icon-image" src="./images/Icons/icons8-github-48 (1).png">Github</a></span>
+                        <span class="icon-hover"><a href="./images/Justin Brown Resume.pdf" class="icon-link nav-link" target="_blank"><img class="icon-image" src="./images/Icons/icons8-pdf-38 (1).png">Resume</a></span>
                     </div>
                     <hr>
                     <div class="navbar-list">
@@ -83,10 +83,10 @@
                 </article>
                 <article>
                     <div class="article-title">Bike Shop</div>
-                    <a href="https://github.com/JustinBrown123/apimasteryproject-bikes" target="_blank" class="article-image"><img src="./images/BikeShop.png"></a>
-                    <div class="article-description">A single page web app for a mock bike shop</div>
+                    <a href="trailsidebicycle.com" target="_blank" class="article-image"><img src="./images/trailside_image.png"></a>
+                    <div class="article-description">A Website developed for a bicycle shop with the Owner to help online presence grow</div>
                     <div class="article-technologies"><strong>Technologies Used:</strong><br>
-                        Javascript, HTML, CSS, API, SQL, .NET Core</div>
+                        React, Javascript, HTML, CSS, Photoshop, Netlify</div>
                     
                 </article>
             </div>
@@ -172,8 +172,6 @@ showSlides(slideIndex);
 function navBarSlide(n){
     showSlides(slideIndex =n)
 }
-
-
     // Next/previous controls
 function plusSlides(n) {
     if(n == 1){
@@ -183,9 +181,8 @@ function plusSlides(n) {
     slides[slideIndex-1].style.animation = "animateleft 0.5s";}, 200)
     }
     else if(n == -1){
-
-        setTimeout(
-        function slideleft(){
+    setTimeout(
+    function slideleft(){
     slides[slideIndex-1].style.display = "block";
     slides[slideIndex-1].style.animation = "animateright 0.5s";}, 200)
     } 
